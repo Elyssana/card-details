@@ -10,6 +10,41 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Container 2 */
+  /* div.grid_1 */
+}
+body form input {
+  color: hsl(270, 3%, 87%);
+  height: 45px;
+  width: 380px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+body form ::placeholder {
+  color: hsl(270, 3%, 87%);
+}
+body form label {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  margin-bottom: 0.3rem;
+}
+body form #third_line {
+  width: 380px;
+  display: flex;
+  flex-direction: row;
+}
+body form #third_line #exp_date input {
+  width: 80px;
+}
+body form #third_line #cvc {
+  width: 80px;
 }
 body .conteiners {
   height: 100vh;
@@ -24,9 +59,6 @@ body .container {
   flex-direction: column;
   padding: 50px;
   width: 50%;
-}
-body .container img {
-  height: 200px;
 }
 body .attribution {
   font-size: 12px;
