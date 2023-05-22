@@ -11,7 +11,9 @@ body {
   flex-direction: column;
   align-items: center;
   /* Container 2 */
-  /* div.grid_1 */
+}
+body form {
+  width: 396px;
 }
 body form input {
   color: hsl(270, 3%, 87%);
@@ -20,6 +22,7 @@ body form input {
   padding-left: 16px;
   border-radius: 8px;
   border: 1px solid hsl(270, 3%, 87%);
+  box-shadow: 0px 0px 1px hsl(270, 3%, 87%);
 }
 body form ::placeholder {
   color: hsl(270, 3%, 87%);
@@ -36,15 +39,16 @@ body form label {
   margin-bottom: 0.3rem;
 }
 body form #third_line {
-  width: 380px;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 body form #third_line #exp_date input {
   width: 80px;
 }
 body form #third_line #cvc {
-  width: 80px;
+  width: 160px;
 }
 body .conteiners {
   height: 100vh;
