@@ -16,13 +16,20 @@ body form {
   width: 396px;
 }
 body form input {
-  color: hsl(270, 3%, 87%);
   height: 45px;
   width: 380px;
-  padding-left: 16px;
+  padding-left: 14px;
   border-radius: 8px;
   border: 1px solid hsl(270, 3%, 87%);
-  box-shadow: 0px 0px 1px hsl(270, 3%, 87%);
+}
+body form input:focus {
+  outline: none;
+  border: solid 1px transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(white, white), linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0px 0px 3px hsl(270, 3%, 87%);
 }
 body form ::placeholder {
   color: hsl(270, 3%, 87%);
@@ -49,6 +56,11 @@ body form #third_line #exp_date input {
 }
 body form #third_line #cvc {
   width: 160px;
+}
+body form #btn_confirm {
+  margin-top: 42px;
+  width: 100%;
+  background-color: hsl(278, 68%, 11%);
 }
 body .conteiners {
   height: 100vh;
