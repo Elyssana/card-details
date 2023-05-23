@@ -19,10 +19,65 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Container 2 */
+
+    .conteiners {
+        height: 100vh;
+        width: 1045px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        width: 50%;
+
+    }
+    
+    #cards{
+        display: flex;
+        flex-direction: column;
+        align-items:end;
+        height: 527px;
+        width: 573px;
+        border: 2px solid black;
+        justify-content: space-between;
+        padding: 0;
+
+        background-color: aquamarine;
+        padding-right: 18px;
+
+    }
+    .card{
+
+        justify-content: right;
+        height: 245px;
+        width: 447px;
+
+        border: 2px solid red;
+
+    }
+    #card-front{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       // background-image: url('/images/bg-card-front.png');;
+    }
+    #card-back{
+
+        background-image: url('/images/bg-card-back.png');;
+    }
+    
 
     form {
         width: 396px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         input {
             //color: $Light-grayish-violet;
@@ -31,23 +86,30 @@ body {
             padding-left: 14px;
             border-radius: 8px;
             border: 1px solid $Light-grayish-violet;
-            
+            color: $Very-dark-violet;
             &:focus {
                 outline: none;
-                
+
                 //padding: 0.5rem;
-                border: solid 1px transparent;
+                border: solid 1.5px transparent;
                 border-radius: 8px;
                 background-image: linear-gradient(white, white),
-                linear-gradient(
-                    to right,
-                    hsl(249, 99%, 64%),
-                    hsl(278, 94%, 30%)
+                    linear-gradient(
+                        to right,
+                        hsl(249, 99%, 64%),
+                        hsl(278, 94%, 30%)
                     );
-                    background-origin: border-box;
-                    background-clip: padding-box, border-box;
-                    box-shadow: 0px 0px 3px $Light-grayish-violet;
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                //box-shadow: 0px 0px 3px $Light-grayish-violet;
             }
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
         }
 
         ::placeholder {
@@ -55,6 +117,8 @@ body {
         }
 
         label {
+            width: 100%;
+            justify-content: left;
             font-weight: 700;
             font-size: 12px;
             margin-top: 22px;
@@ -82,76 +146,30 @@ body {
             }
         }
         #btn_confirm {
+            height: 50px;
             margin-top: 42px;
+            margin-bottom: 1px;
             width: 100%;
             background-color: $Very-dark-violet;
+            color: $White;
+            background-image: none;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.03);
+                transition: 300ms linear;
+            }
+            &:not(:hover, :focus) {
+                transform: scale(1);
+                transition: 300ms linear;
+                /* estilos quando o elemento não está em foco */
+            }
+            
         }
+
+        
     }
 
-    .conteiners {
-        height: 100vh;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        width: 50%;
-
-        //     /* bg-card-front.png */
-
-        //     position: absolute;
-        //     width: 447px;
-        //     height: 245px;
-        //     left: -3px;
-        //     top: 0px;
-
-        //     background: url(.png);
-
-        //     /* div.back_card */
-
-        //     position: absolute;
-        //     width: 447px;
-        //     height: 250px;
-        //     left: -10.08px;
-        //     top: 282px;
-
-        //     /* bg-card-back.png */
-
-        //     position: absolute;
-        //     width: 447px;
-        //     height: 245px;
-        //     left: 0px;
-        //     top: 0px;
-
-        //     background: url(.png);
-
-        //     /* 000 */
-
-        //     position: absolute;
-        //     width: 31.17px;
-        //     height: 21px;
-        //     left: 358.03px;
-        //     top: 109px;
-
-        //     font-family: 'Space Grotesk';
-        //     font-style: normal;
-        //     font-weight: 500;
-        //     font-size: 16px;
-        //     line-height: 20px;
-        //     /* identical to box height */
-        //     display: flex;
-        //     align-items: center;
-
-        //     color: #DEDDDF;
-
-        //     #card1 {}
-    }
 
     .attribution {
         font-size: 12px;

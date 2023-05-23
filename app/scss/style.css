@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 * {
   margin: 0;
@@ -10,10 +11,52 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Container 2 */
+}
+body .conteiners {
+  height: 100vh;
+  width: 1045px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 50%;
+}
+body #cards {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 527px;
+  width: 573px;
+  border: 2px solid black;
+  justify-content: space-between;
+  padding: 0;
+  background-color: aquamarine;
+  padding-right: 18px;
+}
+body .card {
+  justify-content: right;
+  height: 245px;
+  width: 447px;
+  border: 2px solid red;
+}
+body #card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #card-back {
+  background-image: url("/images/bg-card-back.png");
 }
 body form {
   width: 396px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body form input {
   height: 45px;
@@ -21,20 +64,28 @@ body form input {
   padding-left: 14px;
   border-radius: 8px;
   border: 1px solid hsl(270, 3%, 87%);
+  color: hsl(278, 68%, 11%);
 }
 body form input:focus {
   outline: none;
-  border: solid 1px transparent;
+  border: solid 1.5px transparent;
   border-radius: 8px;
   background-image: linear-gradient(white, white), linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  box-shadow: 0px 0px 3px hsl(270, 3%, 87%);
+}
+body form input[type=number]::-webkit-inner-spin-button,
+body form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 body form ::placeholder {
   color: hsl(270, 3%, 87%);
 }
 body form label {
+  width: 100%;
+  justify-content: left;
   font-weight: 700;
   font-size: 12px;
   margin-top: 22px;
@@ -58,23 +109,22 @@ body form #third_line #cvc {
   width: 160px;
 }
 body form #btn_confirm {
+  height: 50px;
   margin-top: 42px;
+  margin-bottom: 1px;
   width: 100%;
   background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  background-image: none;
 }
-body .conteiners {
-  height: 100vh;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+body form #btn_confirm:hover, body form #btn_confirm:focus {
+  transform: scale(1.03);
+  transition: 300ms linear;
 }
-body .container {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  width: 50%;
+body form #btn_confirm:not(:hover, :focus) {
+  transform: scale(1);
+  transition: 300ms linear;
+  /* estilos quando o elemento não está em foco */
 }
 body .attribution {
   font-size: 12px;

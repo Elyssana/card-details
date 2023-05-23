@@ -20,12 +20,21 @@
     <body>
         <div class="conteiners">
             <div class="container" id="cards">
-                <img src="images\bg-card-front.png" alt="" />
+                <div class="card" id="card-front">
+                    <div id="view-card-number">0000 0000 0000 0000</div>
+                    <div div id="ch-ed">
+                        <div id="view-cardholder-name">Jane appleseed</div>
+                        <div id="view-exp-date">00/00</div>
+                    </div>
+                </div>
 
-                <img src="images\bg-card-back.png" alt="" />
+                <div class="card" id="card-back">
+                    <div id="view-cvc">000</div>
+                </div>
             </div>
+
             <div class="container">
-                <form action="">
+                <form>
                     <label for="name">CARDHOLDER NAME</label>
                     <input
                         type="text"
@@ -45,20 +54,20 @@
                         <div id="exp_date">
                             <label for="date"> EXP. DATE (MM/YY)</label>
                             <input
-                                type="month"
+                                type="number"
                                 id="date"
                                 name="month"
                                 placeholder="MM"
                             />
                             <input
-                                type="year"
+                                type="number"
                                 id="date"
                                 name="year"
                                 placeholder="YY"
                             />
                         </div>
 
-                        <div class="cvc"> 
+                        <div class="cvc">
                             <label for="cvc"> CVC</label>
                             <input
                                 type="number"
@@ -69,7 +78,7 @@
                         </div>
                     </div>
 
-                    <input id="btn_confirm" type="button" value="Confirm">
+                    <input id="btn_confirm" type="button" value="Confirm" />
                 </form>
 
                 <!-- 0000 0000 0000 0000
