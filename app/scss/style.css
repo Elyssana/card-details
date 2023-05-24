@@ -8,11 +8,13 @@
 }
 
 body {
+  background-image: url("/images/bg-main-desktop.png");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .conteiners {
+body .containers {
   height: 100vh;
   width: 1045px;
   display: flex;
@@ -24,33 +26,67 @@ body .container {
   display: flex;
   flex-direction: column;
   padding: 50px;
+  margin: 50px;
   width: 50%;
+}
+body .container-card {
+  width: 537px;
+  display: flex;
+}
+body #container-card-back {
+  justify-content: right;
 }
 body #cards {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   height: 527px;
   width: 573px;
-  border: 2px solid black;
   justify-content: space-between;
   padding: 0;
-  background-color: aquamarine;
-  padding-right: 18px;
+  margin-right: 18px;
 }
 body .card {
-  justify-content: right;
   height: 245px;
   width: 447px;
-  border: 2px solid red;
 }
 body #card-front {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 191px;
+  width: 383px;
+  padding: 27px 32px;
+  background-image: url("/images/bg-card-front.png");
+}
+body #card-front img {
+  height: 47px;
+  width: 83.5px;
+}
+body #card-front #view-card-number {
+  letter-spacing: 3.5px;
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  margin: 61px 0px 24px;
+}
+body #card-front #ch-ed {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #card-front #ch-ed #view-cardholder-name {
+  letter-spacing: 9.5%;
 }
 body #card-back {
   background-image: url("/images/bg-card-back.png");
+}
+body #card-back #view-cvc {
+  position: relative;
+  color: hsl(0, 0%, 100%);
+  top: 110px;
+  left: 358px;
 }
 body form {
   width: 396px;
