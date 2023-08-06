@@ -87,6 +87,7 @@ body #card-back #view-cvc {
   color: hsl(0, 0%, 100%);
   top: 110px;
   left: 358px;
+  width: 35px;
 }
 body form {
   width: 396px;
@@ -168,6 +169,30 @@ body .attribution {
   text-align: center;
   bottom: 10px;
   align-items: bottom;
+}
+@media (max-width: 376px) {
+  body * {
+    transform: scale(0.99);
+    font: pink;
+    margin: 0;
+    padding: 0;
+  }
+  body .containers {
+    flex-direction: column;
+  }
+  body .container {
+    height: 30vh;
+  }
+  body .container-card {
+    height: 30vh;
+    width: 70vw;
+  }
+  body .card {
+    border: solid 5px green;
+    height: 100%;
+    background: no-repeat;
+    background-size: contain;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
