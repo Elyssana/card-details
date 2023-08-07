@@ -44,7 +44,9 @@
                         type="text"
                         id="name"
                         name="name"
+                        maxlength="30"
                         placeholder="e.g Elyssana Oliveira"
+                        oninput=showName()
                     />
 
                     <label for="cardNumber">CARD NUMBER</label>
@@ -53,21 +55,25 @@
                         id="cardNumber"
                         name="cardNumber"
                         placeholder="e.g 1234 5678 9123 0000"
+                        oninput=showNumber()
                     />
                     <div id="third_line">
                         <div id="exp_date">
                             <label for="date"> EXP. DATE (MM/YY)</label>
                             <input
                                 type="number"
-                                id="date"
+                                id="month"
                                 name="month"
                                 placeholder="MM"
+                                oninput=showDate()
                             />
                             <input
                                 type="number"
-                                id="date"
+                                id="year"
                                 name="year"
                                 placeholder="YY"
+                                oninput=showDate()
+
                             />
                         </div>
 
@@ -78,6 +84,8 @@
                                 id="cvc"
                                 name="cvc"
                                 placeholder="e.g 123"
+                                oninput=showCvc()
+
                             />
                         </div>
                     </div>
@@ -120,5 +128,8 @@
                 >Frontend Mentor</a
             >. Coded by <a href="https://github.com/Elyssana">Elyssana Maria</a>.✨
         </div>
+
+        <script src="/app/js/script.js"></script>
+
     </body>
 </html>
