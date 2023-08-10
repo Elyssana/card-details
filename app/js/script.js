@@ -40,3 +40,29 @@ function showCvc(){
     const outputArea = document.getElementById('view-cvc')
     outputArea.textContent = inputField.value
 }
+
+function submitForm(){
+    let name = document.getElementById("name").value
+    let cardNumber = document.getElementById("cardNumber").value
+    let month = document.getElementById("month").value
+    let year = document.getElementById("year").value
+    let cvc = document.getElementById("cvc").value
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("cardNumber", cardNumber);
+    localStorage.setItem("month", month);
+    localStorage.setItem("year", year);
+    localStorage.setItem("cvc", cvc);
+
+     // Exibir mensagem de sucesso
+     var successMessage = document.getElementById("successMessage");
+     successMessage.style.display = "block";
+     successMessage.innerText = "Dados armazenados com sucesso!";
+
+     // Limpar o formulário
+     document.getElementById("myForm").reset();
+
+
+
+
+}

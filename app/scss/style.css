@@ -9,6 +9,7 @@
 
 body {
   background-image: url("/images/bg-main-desktop.png");
+  background-size: auto 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;

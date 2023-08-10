@@ -38,7 +38,7 @@
             </div>
 
             <div class="container">
-                <form>
+                <form id="myForm">
                     <label for="name">CARDHOLDER NAME</label>
                     <input
                         type="text"
@@ -90,8 +90,12 @@
                         </div>
                     </div>
 
-                    <input id="btn_confirm" type="button" value="Confirm" />
+                    <input id="btn_confirm" type="submit" value="Confirm" onclick=submitForm() />
                 </form>
+
+                <div id="successMessage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #4CAF50; color: white; padding: 20px; border-radius: 10px; text-align: center;"></div>
+
+
 
                 <!-- 0000 0000 0000 0000
       Jane Appleseed
