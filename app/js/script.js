@@ -41,6 +41,31 @@ function showCvc(){
     outputArea.textContent = inputField.value
 }
 
+
+class Card{
+    constructor(name, cardNumber, month, year, cvc){
+        this._name = name;
+        this._cardNumber = cardNumber;
+        this._month = month;
+        this._year = year;
+        this._cvc = cvc;
+    }
+}
+
+class Db{
+    getNextId(){
+        let NextId = localStorage.getItem('id')
+        console.log(1);
+    }
+    write(card){
+       //localStorage.setItem('card', JSON.stringify(card))
+       this.getNextId()
+    }
+}
+
+let db = new Db()
+
+
 function submitForm(){
     let name = document.getElementById("name").value
     let cardNumber = document.getElementById("cardNumber").value
@@ -48,19 +73,17 @@ function submitForm(){
     let year = document.getElementById("year").value
     let cvc = document.getElementById("cvc").value
 
-    localStorage.setItem("name", name);
-    localStorage.setItem("cardNumber", cardNumber);
-    localStorage.setItem("month", month);
-    localStorage.setItem("year", year);
-    localStorage.setItem("cvc", cvc);
+    let card = new Card(name, cardNumber, month, year, cvc)
+
+    db.write(card)
 
      // Exibir mensagem de sucesso
-     var successMessage = document.getElementById("successMessage");
-     successMessage.style.display = "block";
-     successMessage.innerText = "Dados armazenados com sucesso!";
+    //  var successMessage = document.getElementById("successMessage");
+    //  successMessage.style.display = "block";
+    //  successMessage.innerText = "Dados armazenados com sucesso!";
 
      // Limpar o formulário
-     document.getElementById("myForm").reset();
+    // document.getElementById("myForm").reset();
 
 
 
