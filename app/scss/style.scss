@@ -113,6 +113,12 @@ body {
         }
     }
 
+    a {
+        // margin: auto;
+        width: 100%;
+
+    }
+
     form {
         width: 396px;
         display: flex;
@@ -128,6 +134,7 @@ body {
             border: 1px solid $Light-grayish-violet;
             color: $Very-dark-violet;
 
+            //gradient border efect
             &:focus {
                 outline: none;
 
@@ -157,7 +164,7 @@ body {
             color: $Light-grayish-violet;
         }
 
-        label {
+        label{
             width: 100%;
             justify-content: left;
             font-weight: 700;
@@ -188,7 +195,8 @@ body {
             }
         }
 
-        #btn_confirm {
+       #btn_confirm, #btn_continue{
+        border-radius: 8px;
             height: 50px;
             margin-top: 42px;
             margin-bottom: 1px;
@@ -208,8 +216,12 @@ body {
                 transition: 300ms linear;
                 /* estilos quando o elemento não está em foco */
             }
+
+            
         }
     }
+
+    
 
     .attribution {
         font-size: 12px;
@@ -219,6 +231,36 @@ body {
         bottom: 10px;
         align-items: bottom;
     }
+
+    #containerForm {
+       
+        
+
+        #icon-complete{
+            margin-bottom:36px ;
+            height: 70px;
+            width: 70px;
+        }
+
+        #thank-message{
+            padding-bottom: 8px;
+            letter-spacing: 3.5px;
+           
+    
+            color: $Very-dark-violet;
+            font-size:28px;
+        }
+
+        #submessage{
+            color: $Dark-grayish-violet;
+            
+        }
+    }
+    
+
+   
+
+
 @media (max-width: 376px) {
     *{
         transform: scale(0.99);
