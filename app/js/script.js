@@ -96,5 +96,20 @@ function submitForm() {
     //  successMessage.innerText = "Dados armazenados com sucesso!";
 
     // Limpar o formulário
-    // document.getElementById("myForm").reset();
+     document.getElementById("myForm").reset();
+
+    let contForm = document.getElementById("containerForm");
+    //contForm.innerHTML = "";
+    contForm.innerHTML = 
+    `<form>
+        <img src="/images/icon-complete.svg" id="icon-complete">
+        <div id="thank-message">THANK YOU!</div>
+        <div id ="submessage" >We've added your card details</div>
+        <a href="index.html">
+            <input id="btn_confirm" type="button" value="Continue" onclick='./index.html' />
+        </a>
+    </form>
+    `
+
+
 }
