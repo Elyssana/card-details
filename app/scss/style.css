@@ -90,6 +90,9 @@ body #card-back #view-cvc {
   left: 358px;
   width: 35px;
 }
+body a {
+  width: 100%;
+}
 body form {
   width: 396px;
   display: flex;
@@ -146,7 +149,8 @@ body form #third_line #exp_date input {
 body form #third_line #cvc {
   width: 160px;
 }
-body form #btn_confirm {
+body form #btn_confirm, body form #btn_continue {
+  border-radius: 8px;
   height: 50px;
   margin-top: 42px;
   margin-bottom: 1px;
@@ -155,11 +159,11 @@ body form #btn_confirm {
   color: hsl(0, 0%, 100%);
   background-image: none;
 }
-body form #btn_confirm:hover, body form #btn_confirm:focus {
+body form #btn_confirm:hover, body form #btn_confirm:focus, body form #btn_continue:hover, body form #btn_continue:focus {
   transform: scale(1.03);
   transition: 300ms linear;
 }
-body form #btn_confirm:not(:hover, :focus) {
+body form #btn_confirm:not(:hover, :focus), body form #btn_continue:not(:hover, :focus) {
   transform: scale(1);
   transition: 300ms linear;
   /* estilos quando o elemento não está em foco */
@@ -170,6 +174,20 @@ body .attribution {
   text-align: center;
   bottom: 10px;
   align-items: bottom;
+}
+body #containerForm #icon-complete {
+  margin-bottom: 36px;
+  height: 70px;
+  width: 70px;
+}
+body #containerForm #thank-message {
+  padding-bottom: 8px;
+  letter-spacing: 3.5px;
+  color: hsl(278, 68%, 11%);
+  font-size: 28px;
+}
+body #containerForm #submessage {
+  color: hsl(279, 6%, 55%);
 }
 @media (max-width: 376px) {
   body * {
