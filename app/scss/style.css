@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("/images/bg-main-desktop.png");
+  background-image: url("../../images/bg-card-front.png");
   background-size: auto 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -57,7 +57,7 @@ body #card-front {
   height: 191px;
   width: 383px;
   padding: 27px 32px;
-  background-image: url("/images/bg-card-front.png");
+  background-image: url("../../images/bg-card-front.png");
 }
 body #card-front img {
   height: 47px;
@@ -81,7 +81,7 @@ body #card-front #ch-ed #view-cardholder-name {
   letter-spacing: 9.5%;
 }
 body #card-back {
-  background-image: url("/images/bg-card-back.png");
+  background-image: url("../../images/bg-card-back.png");
 }
 body #card-back #view-cvc {
   position: relative;
