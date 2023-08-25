@@ -102,7 +102,7 @@ function submitForm() {
     //contForm.innerHTML = "";
     contForm.innerHTML = 
     `<form>
-        <img src="/images/icon-complete.svg" id="icon-complete">
+        <img src="./images/icon-complete.svg" id="icon-complete">
         <div id="thank-message">THANK YOU!</div>
         <div id ="submessage" >We've added your card details</div>
         <a href="index.html">
